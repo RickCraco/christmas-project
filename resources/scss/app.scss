@@ -9,6 +9,35 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1 {
-    color: $text-color;
+header {
+    position: fixed;
+    top: 0;
+    height: 95px;
+}
+.logo {
+    width: 150px;
+}
+.search-lens {
+    position: relative;
+    right: 40px;
+    border-left: 0px!important;
+}
+.nav-bg {
+    background-color: #0F0F0F;
+}
+.button-bg {
+    background-color: #222222!important;
+}
+.search-bg {
+    background-color: #121212!important;
+}
+.search-bg::placeholder{
+    color: white!important;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 95px;
+    height: calc(100vw - 95px)!important;
 }
