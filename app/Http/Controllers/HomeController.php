@@ -11,4 +11,6 @@ class HomeController extends Controller
         $videos = Video::all();
         return view('home', compact('videos'));
     }
+
+    //aggiungere funzione show per visualizzare video player
 }
