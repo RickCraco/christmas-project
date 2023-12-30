@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Video;
 
-class HomeController extends Controller
+class VideoController extends Controller
 {
     public function index(){
         $videos = Video::all();
