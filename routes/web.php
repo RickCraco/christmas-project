@@ -15,3 +15,5 @@ use App\Http\Controllers\VideoController;
 */
 
 Route::get('/',[VideoController::class, 'index'])->name('home');
+
+Route::get('/videos/{id}', [VideoController::class, 'show'])->name('videos.show');
