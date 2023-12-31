@@ -12,5 +12,11 @@ class VideoController extends Controller
         return view('home', compact('videos'));
     }
 
-    //aggiungere funzione show per visualizzare video player
+    public function show($id){
+        $video = Video::findOrFail($id);
+        $videos = Video::all();
+        $comments = Comment::all();
+
+        return view('videos.show', compact('video', 'videos', 'comments'));
+    }
 }
