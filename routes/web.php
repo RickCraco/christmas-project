@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\ShortController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,5 @@ use App\Http\Controllers\VideoController;
 Route::get('/',[VideoController::class, 'index'])->name('home');
 
 Route::get('/videos/{id}', [VideoController::class, 'show'])->name('videos.show');
+
+Route::get('/shorts', [ShortController::class, 'index'])->name('shorts.index');
