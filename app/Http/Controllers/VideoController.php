@@ -20,4 +20,12 @@ class VideoController extends Controller
 
         return view('videos.show', compact('video', 'videos', 'comments'));
     }
+
+    public function search(Request $request){
+        $query = $request->input('query');
+
+        $results = Video::where('title', 'LIKE', "%$query%")->get();
+
+        return view('videos.search', compact('results', 'query'));
+    }
 }

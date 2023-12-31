@@ -19,4 +19,6 @@ Route::get('/',[VideoController::class, 'index'])->name('home');
 
 Route::get('/videos/{id}', [VideoController::class, 'show'])->name('videos.show');
 
+Route::get('/search', [VideoController::class, 'search'])->name('videos.search');
+
 Route::get('/shorts', [ShortController::class, 'index'])->name('shorts.index');
