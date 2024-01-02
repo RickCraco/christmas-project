@@ -2,7 +2,7 @@
   <div class="d-flex flex-column h-100 p-3 text-white nav-bg" style="width: 280px;">
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-          <a href="#" class="nav-link fs-5 text-white" aria-current="page">
+          <a href="/" class="nav-link fs-5 text-white" aria-current="page">
               <i class="fa-solid fa-house me-3"></i>
               Home
           </a>
