@@ -7,6 +7,7 @@
         <div class="row m-0">
             @foreach ($videos as $video)
                 <div class="col-3 my-4" style="width: 323px; height: 274px;"><a href="" style="text-decoration: none">
+                    <a href="{{route('videos.show', $video->id)}}" style="text-decoration: none">
                         <img src="{{ $video->thumb }}" alt="" style="width: 310px; height: 174px;" class="rounded-4">
                         <div class="d-flex">
                             <img src="{{ $video->user_thumb }}" alt="" class="rounded-circle"
