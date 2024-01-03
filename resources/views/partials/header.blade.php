@@ -6,12 +6,13 @@
                 </span>
                 <img src="img/youtube-logo.png" class="logo" alt="youtube">
             </div>
-            <form class="d-flex col-8 justify-content-center">
+            <form class="d-flex col-8 justify-content-center" action="{{ route('videos.search') }}" method="GET">
                 <div class="input-group w-50">
-                    <input type="search" class="form-control text-white rounded-pill border-secondary search-bg" placeholder="Cerca" aria-label="Username" aria-describedby="basic-addon1">
-                    <span class="input-group-text rounded-end-circle search-lens border-secondary button-bg">
-                        <i class="fa-solid text-white fa-magnifying-glass"></i>
-                    </span>
+                        @csrf
+                        <input type="text" class="form-control text-white rounded-pill border-secondary search-bg" placeholder="Cerca" aria-label="Username" aria-describedby="basic-addon1" name="query" required>
+                        <button type="submit" class="input-group-text rounded-end-circle search-lens border-secondary button-bg">
+                            <i class="fa-solid text-white fa-magnifying-glass"></i>
+                        </button>
                     <span class="input-group-text rounded-circle button-bg border-0" style="transform: translate(-25px, 0); height: 38px; width: 38px;">
                         <i class="fa-solid fa-microphone" style="color: #ffffff;"></i>
                     </span>
