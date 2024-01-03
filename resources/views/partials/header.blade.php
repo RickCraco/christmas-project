@@ -4,7 +4,7 @@
                 <span class="input-group-text text-white border-0 bg-transparent me-3" style="height: 38px; width: 38px;">
                     <i class="fa-solid fa-bars fs-3" style="color: #ffffff;"></i>
                 </span>
-                <img src="img/youtube-logo.png" class="logo" alt="youtube">
+                <img src="/img/youtube-logo.png" class="logo" alt="youtube">
             </div>
             <form class="d-flex col-8 justify-content-center" action="{{ route('videos.search') }}" method="GET">
                 <div class="input-group w-50">
