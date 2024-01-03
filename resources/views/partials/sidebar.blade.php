@@ -8,7 +8,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link fs-5 text-white">
+          <a href="{{ route('shorts.index') }}" class="nav-link fs-5 text-white">
               <i class="fa-solid fa-retweet me-3"></i>
               Shorts
           </a>
