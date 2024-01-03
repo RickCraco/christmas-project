@@ -13,6 +13,7 @@ header {
     position: fixed;
     top: 0;
     height: 95px;
+    z-index: 9000;
 }
 
 main{
@@ -48,4 +49,5 @@ main{
     top: 95px;
     width: 280px;
     height: calc(100vw - 95px)!important;
+    z-index: 9000;
 }
