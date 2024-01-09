@@ -6,10 +6,10 @@
 
 <script>
     function scrollDown(){
-        window.scrollBy(0, 1250);
+        window.scrollBy(0, 900);
     }
     function scrollUp(){
-        window.scrollBy(0, -1250);
+        window.scrollBy(0, -900);
     }
 </script>
 
@@ -25,7 +25,7 @@
     </div>
     @foreach ($shorts as $item)
     <div class="h-100 w-100 mt-1 d-flex justify-content-center position-relative">
-        <video src="shorts/Dancing_Cat_Funny_.mp4" controls style="border-radius: 20px; height: 1200px;"></video>
+        <video src="shorts/Dancing_Cat_Funny_.mp4" controls style="border-radius: 20px; height: 850px;"></video>
         <div style="position: absolute; bottom: 50px; left: 780px; font-size: 14px;" class="text-white">
             <img src="{{ $item->user_thumb }}" class="rounded-circle" alt="">
             <span>{{ $item->username }}</span>
